@@ -9,33 +9,27 @@ class OfflineStrike
     private static int[] maxSeats;
     private static int[] departureCosts;
     private static int[] hotelCosts;
-    private static int[] totalHotelCosts;
         
     private static int theoreticalMin = Int32.MaxValue;
-    private static List<int> globalMin =  new List<int>{ Int32.MaxValue };
+    private static int globalMin = Int32.MaxValue;
 
     private static int seatsLeft;
-    private static int daysLeft;
 
 
     public static void Main()
     {
-        List<string> text = System.IO.File.ReadLines(@"D:\AAA_Floris\AAA COSC UU\Algorithms for Decision Support\OfflineStrike\test.txt").ToList();
-
-        Console.WriteLine("Hello, World!");
-
+        string currentDir = AppDomain.CurrentDomain.BaseDirectory;
+        string file = Path.Combine(currentDir, @"..\..\..\test.txt");
+        List<string> text = File.ReadLines(file).ToList();
+        
         dayCount = Int32.Parse(text[1]);
         
         maxSeats = new int[dayCount];
         departureCosts = new int[dayCount];
         hotelCosts = new int[dayCount];
-        totalHotelCosts = new int[dayCount];
         
         theoreticalMin = Int32.MaxValue;
-        globalMin = new List<int> { Int32.MaxValue };
-
-        //seatsLeft = Int32.Parse(text[0]);
-        daysLeft = Int32.Parse(text[1]);
+        globalMin = Int32.MaxValue;
         
         int[][] decTree = new int[dayCount][];
         for (int i = 0; i < decTree.Length; i++)
@@ -52,28 +46,24 @@ class OfflineStrike
         }
 
         (int, int[][]) result = DFS(0, 0, maxSeats.Sum(), Int32.Parse(text[0]), decTree);
-
-        Console.WriteLine("AND THE WINNER IS.... TADAHHHH -->" + result.Item1);
         
         foreach (int[] ints in result.Item2)
         {
             Console.WriteLine($"{ints[0]}, {ints[1]}");
         }
+        
+        Console.WriteLine("Minimum cost: " + result.Item1);
     }
 
     private static (int, int[][]) DFS(int index, int currentCost, int seatsLeft, int peopleRemaining, int[][] decTree)
     {
-        Console.WriteLine("day: " + index + " | people left: " + peopleRemaining + " | currentCost: " + currentCost);
+        //Console.WriteLine("day: " + index + " | people left: " + peopleRemaining + " | currentCost: " + currentCost);
+        
+        int localMin = Int32.MaxValue;
         
         if (seatsLeft == 0 || peopleRemaining == 0) return (currentCost, decTree);
         
         int startIndex = seatsLeft - maxSeats[index] < peopleRemaining ? peopleRemaining - (seatsLeft - maxSeats[index]) : 0;
-
-        //if (startIndex == maxSeats[index]) return currentCost;
-        
-        int localMin = Int32.MaxValue;
-        
-        //i + ", " + peopleRemaining + ", " + currentCost
         
         for (int i = startIndex; i <= maxSeats[index] && i <= peopleRemaining; i++)
         {
@@ -82,8 +72,13 @@ class OfflineStrike
             
             if (result.Item1 < localMin)
             {
-                result.Item2[index][0] = i;
-                result.Item2[index][1] = peopleRemaining;
+                if (result.Item1 <= globalMin)
+                {
+                    result.Item2[index][0] = i;
+                    result.Item2[index][1] = peopleRemaining;
+                    globalMin = result.Item1;
+                }
+                
                 localMin = result.Item1;
             }
         }
