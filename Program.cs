@@ -19,7 +19,7 @@ class OfflineStrike
     public static void Main()
     {
         string currentDir = AppDomain.CurrentDomain.BaseDirectory;
-        string file = Path.Combine(currentDir, @"..\..\..\test.txt");
+        string file = Path.Combine(currentDir, @"..\..\..\test2.txt");
         List<string> text = File.ReadLines(file).ToList();
         
         dayCount = Int32.Parse(text[1]);
@@ -61,7 +61,7 @@ class OfflineStrike
         
         int localMin = Int32.MaxValue;
         
-        if (seatsLeft == 0 || peopleRemaining == 0) return (currentCost, decTree);
+        if (seatsLeft == 0 || currentCost > globalMin) return (currentCost, decTree);
         
         int startIndex = seatsLeft - maxSeats[index] < peopleRemaining ? peopleRemaining - (seatsLeft - maxSeats[index]) : 0;
         
