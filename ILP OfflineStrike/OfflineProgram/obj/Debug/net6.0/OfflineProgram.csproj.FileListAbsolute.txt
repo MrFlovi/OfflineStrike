@@ -16,3 +16,21 @@ C:\Users\matsv\Desktop\Master\Algorithms for decision support\OfflineProgram\Off
 C:\Users\matsv\Desktop\Master\Algorithms for decision support\OfflineProgram\OfflineProgram\obj\Debug\net6.0\OfflineProgram.pdb
 C:\Users\matsv\Desktop\Master\Algorithms for decision support\OfflineProgram\OfflineProgram\obj\Debug\net6.0\OfflineProgram.genruntimeconfig.cache
 C:\Users\matsv\Desktop\Master\Algorithms for decision support\OfflineProgram\OfflineProgram\obj\Debug\net6.0\ref\OfflineProgram.dll
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\bin\Debug\net6.0\OfflineProgram.exe
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\bin\Debug\net6.0\OfflineProgram.deps.json
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\bin\Debug\net6.0\OfflineProgram.runtimeconfig.json
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\bin\Debug\net6.0\OfflineProgram.dll
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\bin\Debug\net6.0\OfflineProgram.pdb
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\bin\Debug\net6.0\gurobi100.netstandard20.dll
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\bin\Debug\net6.0\gurobi100.netstandard20.xml
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\obj\Debug\net6.0\OfflineProgram.csproj.AssemblyReference.cache
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\obj\Debug\net6.0\OfflineProgram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\obj\Debug\net6.0\OfflineProgram.AssemblyInfoInputs.cache
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\obj\Debug\net6.0\OfflineProgram.AssemblyInfo.cs
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\obj\Debug\net6.0\OfflineProgram.csproj.CoreCompileInputs.cache
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\obj\Debug\net6.0\OfflineProgram.csproj.CopyComplete
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\obj\Debug\net6.0\OfflineProgram.dll
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\obj\Debug\net6.0\refint\OfflineProgram.dll
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\obj\Debug\net6.0\OfflineProgram.pdb
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\obj\Debug\net6.0\OfflineProgram.genruntimeconfig.cache
+C:\Users\matsv\Desktop\OfflineStrike\ILP OfflineStrike\OfflineProgram\obj\Debug\net6.0\ref\OfflineProgram.dll
